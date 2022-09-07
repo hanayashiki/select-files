@@ -1,3 +1,3 @@
-import { hello } from "select-files";
+import selectFiles from "select-files";
 
-console.info(hello());
+console.info(selectFiles());

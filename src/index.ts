@@ -71,6 +71,8 @@ const createInputFile = ({
 const selectFiles = (options?: Options) =>
   new Promise<null | FileList>((resolve) => {
     const input = createInputFile(options);
+    input.hidden = true;
+    document.body.appendChild(input);
 
     input.addEventListener("change", () => resolve(input.files || null));
 
